@@ -1,0 +1,53 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+node_modules
+dist
+dist-ssr
+*.local
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Python build artifacts
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.pytest_cache/
+.venv/
+venv/
+*.egg-info/
+
+# Personal tool settings
+.claude/
+
+# Datasets — none are distributed with the repo
+test/
+Big_Datasets/
+big_datasets/
+*.tif
+*.tiff
+
+# Generated backend output (work_dir run folders), incl. examples/ demo output
+vis-*/
+test-*/
+
+# Not published: internal design notes / evaluation, and the paper's toy forests
+docs/
+toy-*/
+
+TODO.md

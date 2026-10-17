@@ -1,0 +1,8 @@
+{
+  "extraPaths": [
+    "PolSAR",
+    "ImageRF",
+    "Library"
+  ],
+  "typeCheckingMode": "basic"
+}

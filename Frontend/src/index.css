@@ -1,0 +1,20 @@
+/* ── Typography ────────────────────────────────────────────────────────────
+   Single source of truth for the app's fonts; TS reads them via var() (see
+   src/theme.ts), so a font change is made here and nowhere else.
+
+   Body: Open Sans (bundled via @fontsource/open-sans, 400/600/700 + italic).
+   Headlines: Brandon Grotesque, semibold/bold. Brandon is a commercial HVD
+   font and cannot be bundled from npm — it is picked up by family name when
+   installed on the machine (or once licensed webfont files get an @font-face
+   below); until then headlines fall back to Open Sans at the same weights. */
+:root {
+  --font-body: 'Open Sans', system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  --font-heading: 'Brandon Grotesque', 'Brandon Text', 'Brandon Grotesque Web', var(--font-body);
+}
+
+body { margin: 0; font-family: var(--font-body); }
+html, body, #root { height: 100%; }
+
+/* Form controls don't inherit the page font by default — make every button,
+   input and select use Open Sans like the rest of the UI. */
+button, input, select, textarea { font-family: inherit; }
